@@ -54,3 +54,9 @@ Example:
 ```bash
 curl http://localhost:8085/health
 ```
+
+# Production build
+
+```bash
+docker compose -f compose.prod.yaml up --build
+```

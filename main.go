@@ -18,7 +18,7 @@ func healthHandler(w http.ResponseWriter, r *http.Request) {
 	w.Header().Set("Content-Type", "application/json")
 	w.WriteHeader(http.StatusOK)
 
-	response := map[string]string{"status": "OK", "message": "Server is healthy and autoreload works."}
+	response := map[string]string{"status": "OK", "message": "Server is healthy."}
 	json.NewEncoder(w).Encode(response)
 }
 
